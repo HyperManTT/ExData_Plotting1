@@ -30,7 +30,7 @@ lines(power_data$Datetime, power_data$Sub_metering_1, col="black")
 lines(power_data$Datetime, power_data$Sub_metering_2, col="red")
 lines(power_data$Datetime, power_data$Sub_metering_3, col="blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1), 
-       lwd=c(1.5, 1.5), col=c("black", "red", "blue"))
+       lwd=c(1.5, 1.5), col=c("black", "red", "blue"), bty="n")
 
 #Plot 4
 plot(power_data$Datetime, power_data$Global_reactive_power, type="n", xlab="datetime", ylab="Global_reactive_power")
